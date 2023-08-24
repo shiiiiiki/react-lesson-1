@@ -1,22 +1,17 @@
-import './App.css';
+import "./App.css";
+import Definitions from "./components/Definitions";
 
 function App() {
+  const definitions = [
+    { dt: "one", dd: "two", id: 1 },
+    { dt: "another term", dd: "another description", id: 2 },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <h1>Definitions List</h1>
+        <Definitions data={definitions} />
+      </div>
   );
 }
 
