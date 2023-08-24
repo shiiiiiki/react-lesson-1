@@ -1,22 +1,13 @@
 import './App.css';
+import Alert from "./components/Alert";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Alert type="warning" text="what is love?" />
+          <Alert type="light" text="love love" />
+          <Alert type="dark" text="text text text" />
+      </div>
   );
 }
 
